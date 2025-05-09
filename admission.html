@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form - The Leading Schooling System</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/admission.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-container">
+                    <img src="images-myimg.jpeg.png" alt="The Leading Schooling System" class="logo-image">
+                </div>
+                <div class="logo-text">
+                    <span class="text-top">The Leading</span>
+                    <span class="text-bottom">Schooling System</span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#academics">Academics</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="admission.html" class="active">Admission</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Fee Structure Section -->
+    <section class="fee-structure">
+        <div class="container">
+            <h2 class="section-title">Fee Structure</h2>
+            <div class="fee-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Class Level</th>
+                            <th>Admission Fee (One-time)</th>
+                            <th>Monthly Fee</th>
+                            <th>Annual Charges</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pre-Primary (Nursery - KG)</td>
+                            <td>Rs. 15,000</td>
+                            <td>Rs. 3,500</td>
+                            <td>Rs. 8,000</td>
+                        </tr>
+                        <tr>
+                            <td>Primary (Class 1-5)</td>
+                            <td>Rs. 20,000</td>
+                            <td>Rs. 4,500</td>
+                            <td>Rs. 10,000</td>
+                        </tr>
+                        <tr>
+                            <td>Middle (Class 6-8)</td>
+                            <td>Rs. 25,000</td>
+                            <td>Rs. 5,500</td>
+                            <td>Rs. 12,000</td>
+                        </tr>
+                        <tr>
+                            <td>Secondary (Class 9-10)</td>
+                            <td>Rs. 30,000</td>
+                            <td>Rs. 6,500</td>
+                            <td>Rs. 15,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="fee-notes">
+                <h3>Additional Information:</h3>
+                <ul>
+                    <li>Sibling discount of 10% on monthly fee is available</li>
+                    <li>Computer lab and science lab charges are included</li>
+                    <li>Books and uniform charges are separate</li>
+                    <li>Monthly fee should be paid by the 10th of each month</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Form Section -->
+    <section class="admission-form">
+        <div class="container">
+            <h2 class="section-title">Admission Form</h2>
+            <form class="student-form">
+                <div class="form-group">
+                    <h2>Student Information</h2>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="studentName">Student's Full Name</label>
+                            <input type="text" id="studentName" name="studentName" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="class">Applying for Class</label>
+                            <select id="class" name="class" required>
+                                <option value="">Select Class</option>
+                                <option value="1">Class 1</option>
+                                <option value="2">Class 2</option>
+                                <option value="3">Class 3</option>
+                                <option value="4">Class 4</option>
+                                <option value="5">Class 5</option>
+                                <option value="6">Class 6</option>
+                                <option value="7">Class 7</option>
+                                <option value="8">Class 8</option>
+                                <option value="9">Class 9</option>
+                                <option value="10">Class 10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h2>Parent/Guardian Information</h2>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="parentName">Parent's/Guardian's Name</label>
+                            <input type="text" id="parentName" name="parentName" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="relationship">Relationship with Student</label>
+                            <input type="text" id="relationship" name="relationship" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="phone">Contact Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </div>
+                    <div class="form-field full-width">
+                        <label for="address">Complete Address</label>
+                        <textarea id="address" name="address" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h2>Previous School Information</h2>
+                    <div class="form-field full-width">
+                        <label for="previousSchool">Previous School Name (if any)</label>
+                        <input type="text" id="previousSchool" name="previousSchool">
+                    </div>
+                    <div class="form-field full-width">
+                        <label for="reasonForLeaving">Reason for Leaving Previous School</label>
+                        <textarea id="reasonForLeaving" name="reasonForLeaving"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                    <button type="reset" class="reset-btn">Reset Form</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone"></i> 0341-2123415</li>
+                        <li><i class="fas fa-phone"></i> 0313-5182284</li>
+                        <li><i class="fas fa-envelope"></i> theleading@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Campuses</h3>
+                    <ul class="campus-list">
+                        <li><strong>Campus 1:</strong><br>R-81 & R-82, Sector 2, North Karachi.</li>
+                        <li><strong>Campus 2:</strong><br>Plot St 4, Sector 5/b-1, North Karachi</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Leading Schooling System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html> 
